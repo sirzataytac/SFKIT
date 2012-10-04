@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Dialog Box</title>
+<link href="css/dialogbox.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#dialog-box .close').click(function() {
+		closeid = $(this).attr('id');
+		$('#dialog-box .'+closeid).fadeOut('slow');
+	});
+
+});
+
+</script>
+</head>
+
+<body>
+<div style="font-family:Tahoma; margin: 20px;">
+<!-- Dialog Box [Start] -->
+<div id="dialog-box">
+		<div class="dialog success">
+			<button id="success" class="close">x</button>
+			<p>Success - Dialog Box</p>
+		</div>
+		<div class="dialog info">
+			<button id="info" class="close">x</button>
+			<p>Info - Dialog Box</p>
+		</div>
+		<div class="dialog warning">
+			<button id="warning" class="close">x</button>
+			<p>Warning - Dialog Box</p>
+		</div>
+	</div>
+<!-- Dialog Box [End] -->
+</div>
+
+</body>
+
+</html>

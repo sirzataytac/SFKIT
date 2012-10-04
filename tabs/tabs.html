@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Tabs</title>
+<link href="css/tabs.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	function tabs(obj){
+		$('.tab-content').hide();
+		$('.tabs a').removeClass("selected");
+		var id = obj.attr("href");
+		$(id).fadeIn();
+		obj.addClass("selected");
+	}
+
+	tabs($('.selected'));
+	
+	$('.tabs a').click(function(){
+		tabs($(this));
+	});
+	
+});
+</script>
+</head>
+
+<body style="background-color: #e4e4e4; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 13px;">
+
+<!-- Tabs [Start] -->
+<div id="tabs">
+	<ul class="tabs">
+		<li><a class="selected" href="#tab-1" title="">Tab 1</a></li>
+		<li><a href="#tab-2" title="">Tab 2</a></li>
+		<li><a href="#tab-3" title="">Tab 3</a></li>
+		<li><a href="#tab-4" title="">Tab 4</a></li>
+		<li><a href="#tab-5" title="">Tab 5</a></li>
+		<li><a href="#tab-6" title="">Tab 6</a></li>
+	</ul>
+	<div id="tab-content">
+		<div id="tab-1" class="tab-content">
+			<div class="tab">
+				<p>Elementum urna tincidunt! Lectus urna. Amet. Est integer pulvinar, 
+				rhoncus nunc placerat. Eu tortor integer, a eros nunc enim! Vut 
+				quis elementum nec, dictumst. Pulvinar ridiculus magnis ridiculus 
+				massa cursus pulvinar? A a diam nunc pulvinar, nunc penati.</p>
+			</div>
+		</div>
+		<div id="tab-2" class="tab-content">
+			<div class="tab">
+				<p>Lectus urna. Amet. Est integer pulvinar, rhoncus nunc placerat. 
+				Eu tortor integer, a eros nunc enim! Vut quis elementum nec, dictumst. 
+				Pulvinar ridiculus magnis ridiculus massa cursus pulvinar? A a diam 
+				nunc pulvinar, nunc penati.</p>
+			</div>
+		</div>
+		<div id="tab-3" class="tab-content">
+			<div class="tab">
+				<p>Amet. Est integer pulvinar, rhoncus nunc placerat. Eu tortor 
+				integer, a eros nunc enim! Vut quis elementum nec, dictumst. Pulvinar 
+				ridiculus magnis ridiculus massa cursus pulvinar? A a diam nunc 
+				pulvinar, nunc penati.</p>
+			</div>
+		</div>
+		<div id="tab-4" class="tab-content">
+			<div class="tab">
+				<p>Est integer pulvinar, rhoncus nunc placerat. Eu tortor integer, 
+				a eros nunc enim! Vut quis elementum nec, dictumst. Pulvinar ridiculus 
+				magnis ridiculus massa cursus pulvinar? A a diam nunc pulvinar, 
+				nunc penati.</p>
+			</div>
+		</div>
+		<div id="tab-5" class="tab-content">
+			<div class="tab">
+				<p>Eu tortor integer, a eros nunc enim! Vut quis elementum nec, 
+				dictumst. Pulvinar ridiculus magnis ridiculus massa cursus pulvinar? 
+				A a diam nunc pulvinar, nunc penati.</p>
+			</div>
+		</div>
+		<div id="tab-6" class="tab-content">
+			<div class="tab">
+				<p>Vut quis elementum nec, dictumst. Pulvinar ridiculus magnis ridiculus 
+				massa cursus pulvinar? A a diam nunc pulvinar, nunc penati.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Tabs  [End] -->
+
+</body>
+
+</html>

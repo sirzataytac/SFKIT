@@ -1,0 +1,14 @@
+﻿html, body { border:0; height: 100%; margin:0; padding:0; width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; margin:0; padding:0; }
+p, ul, ol,form, fieldset, input { margin:0; padding:0; }
+ul, ol { list-style:none; }
+fieldset, img { border:0; }
+button { cursor: pointer; }
+input {outline:none;}
+.hide { display: none; }
+#jsfalse { height:50px; background-color:#952520; text-align:center; line-height:50px; color:#ffffff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  }
+a {color:red; cursor:pointer; }
+
+/*** Form Valid [Start]***/
+label { clear:both; display:block;}
+/*** Form Valid [End]***/

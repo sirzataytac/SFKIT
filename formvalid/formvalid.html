@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Form Valid</title>
+<link href="css/formvalid.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function formcontrol() {
+  
+
+  var message = "alanlarını boş bırakmayınız. ";
+  if (document.form.name.value=="") {
+  message = " İsim, " + message ;
+  }
+ 
+
+  if (document.form.email.value=="") {
+  message = "E-Posta, " + message ;
+  }
+   
+
+  if (document.form.comment.value=="") {
+  message ="Mesaj, " + message ;
+  }
+
+
+  if (message == "alanlarını boş bırakmayınız. ") {
+  document.form.submit();
+  }
+  else {
+  alert(message);
+  return false;
+   }
+}
+
+  
+</script>
+</head>
+
+<body style="background-color: #e4e4e4; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 13px;">
+
+<!-- Form Valid [Start] -->
+<form id="form" action="" method="get" name="form">
+	<p><label for="name">Name</label>
+	<input id="name" name="name" size="25" value="" /> </p>
+	<p><label for="email">E-Mail</label>
+	<input id="email" name="email" size="25" value="" /> </p>
+	<p><label for="comment">Your comment</label>
+	<textarea id="comment" cols="22" name="comment"></textarea> </p>
+	<p>
+	<input class="submit" onclick="return formcontrol();" type="submit" value="Submit" />
+	</p>
+</form>
+<!-- Form Valid [End] -->
+
+</body>
+
+</html>

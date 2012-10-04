@@ -1,0 +1,28 @@
+﻿html, body { border:0; height: 100%; margin:0; padding:0; width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; margin:0; padding:0; }
+p, ul, ol,form, fieldset, input { margin:0; padding:0; }
+ul, ol { list-style:none; }
+fieldset, img { border:0; }
+button { cursor: pointer; }
+input {outline:none;}
+.hide { display: none; }
+#jsfalse { height:50px; background-color:#952520; text-align:center; line-height:50px; color:#ffffff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  }
+a {color:red; cursor:pointer; }
+
+/***Calendar [Start]***/
+.ui-datepicker { width: 200px;border: 1px solid #dddddd; background-color:#eeeeee ; color: #333333;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.ui-datepicker a { color: #000000; }
+.ui-datepicker .ui-state-active, .ui-datepicker .ui-state-highlight { color: #eb8f00; outline: none; }
+.ui-datepicker-prev .ui-icon {color:#000000; background:transparent url('../images/calendar.png'); width:16px; height:15px;  text-indent:-9999px; background-position:0px 0px;}
+.ui-datepicker-next .ui-icon {color:#000000; background:transparent url('../images/calendar.png'); width:16px; height:15px;  text-indent:-9999px; background-position:0px 15px;}
+.ui-datepicker {  padding: .2em .2em 0; display: none; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 2px; }
+.ui-datepicker .ui-datepicker-prev { left:1px; }
+.ui-datepicker .ui-datepicker-next { right:1px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: center; text-decoration: none; }
+/***Calendar [End]***/

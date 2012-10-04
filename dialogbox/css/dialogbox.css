@@ -1,0 +1,41 @@
+﻿html, body { border:0; height: 100%; margin:0; padding:0; width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; margin:0; padding:0; }
+p, ul, ol,form, fieldset, input { margin:0; padding:0; }
+ul, ol { list-style:none; }
+fieldset, img { border:0; }
+button { cursor: pointer; }
+input {outline:none;}
+.hide { display: none; }
+#jsfalse { height:50px; background-color:#952520; text-align:center; line-height:50px; color:#ffffff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  }
+
+/***Dialog Box [Start]***/
+#dialog-box .dialog {
+	border-radius: 2px;
+	color: #ffffff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-size: 13px;
+	margin-bottom: 10px;
+	text-shadow:0px 1px 0px #505050;
+}
+#dialog-box .dialog p {
+	padding: 10px 0px 10px 40px;
+}
+#dialog-box .close {
+	background-color:transparent;
+	border:0px;
+	cursor: pointer;
+	float: right;
+	margin: 3px 3px 0px 0px;
+	position: relative;
+}
+#dialog-box .success {
+	background: #4ea255 url('../images/dialogbox/success.png') no-repeat 10px 8px;
+}
+#dialog-box .info {
+	background: #ed9517 url('../images/dialogbox/info.png') no-repeat 10px 8px;
+}
+#dialog-box .warning {
+	background: #a50e19 url('../images/dialogbox/warning.png') no-repeat 10px 8px;
+}
+/***Dialog Box [End]***/

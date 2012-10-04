@@ -1,0 +1,73 @@
+﻿html, body { border:0; height: 100%; margin:0; padding:0; width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; margin:0; padding:0; }
+p, ul, ol,form, fieldset, input { margin:0; padding:0; }
+ul, ol { list-style:none; }
+fieldset, img { border:0; }
+button { cursor: pointer; }
+input {outline:none;}
+.hide { display: none; }
+#jsfalse { height:50px; background-color:#952520; text-align:center; line-height:50px; color:#ffffff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  }
+a {color:red; cursor:pointer; }
+
+/***Slider [Start]***/
+#slider {
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+	background-color: #f2f2f2;
+}
+.ui-slider .ui-slider-handle {
+	background-color: red;
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	outline:none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-color:#ffffff;
+}
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+/***Slider [End]***/

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Accordion Menü</title>
+<link href="css/accordion.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#accordion-menu .open').click(function() {
+
+		$('#accordion-menu .open').removeClass('open-selected');
+	 	$('#accordion-menu .content').slideUp('normal');
+		if($(this).next().is(':hidden') == true) {
+			$(this).addClass('open-selected');
+			$(this).next().slideDown('normal');
+		 } 
+		  
+	 });
+	$('#accordion-menu .content').hide();	  
+});
+
+</script>
+</head>
+
+<body>
+
+<div style="font-family:Tahoma; margin: 20px;">
+<!-- Accordion Menu [Start] -->
+<div id="accordion-menu">
+<ul>
+	<li>
+		<a href="#" class="open">Accordion 1</a>
+		<div class="content">
+			<p>Vut et penatibus! Purus pellentesque hac tristique rhoncus, tristique dignissim mid tempor, arcu nec! Sit elementum. Dictumst odio porta montes turpis cursus a dictumst. Turpis. Nec sed, augue a etiam. Ultrices et, elementum?</p>
+		</div>
+	</li>
+	<li>
+		<a href="#" class="open">Accordion 2</a>
+		<div class="content">
+			<p>Vut et penatibus! Purus pellentesque hac tristique rhoncus, tristique dignissim mid tempor, arcu nec! Sit elementum. Dictumst odio porta montes turpis cursus a dictumst. Turpis. Nec sed, augue a etiam. Ultrices et, elementum?</p>
+		</div>
+	</li>
+	<li>
+		<a href="#" class="open">Accordion 3</a>
+		<div class="content">
+			<p>Vut et penatibus! Purus pellentesque hac tristique rhoncus, tristique dignissim mid tempor, arcu nec! Sit elementum. Dictumst odio porta montes turpis cursus a dictumst. Turpis. Nec sed, augue a etiam. Ultrices et, elementum?</p>
+		</div>
+	</li>
+</ul>
+</div>
+
+<!-- Accordion Menu [End] -->
+</div>
+</body>
+
+</html>

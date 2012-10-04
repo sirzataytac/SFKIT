@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>ToolTip</title>
+<link href="css/tooltip.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$('a[rel=tooltip]').mouseover(function(e) {
+		var tooltipcontent = $(this).attr('title');	
+		$(this).attr('title','');
+		$(this).append('<div id="tooltip"><div class="tooltip-content">' + tooltipcontent + '</div></div>');		
+	
+	}).mousemove(function(e) {
+		
+		$('#tooltip').css("display","block");
+		$('#tooltip').css('top', e.pageY + 10 );
+		$('#tooltip').css('left', e.pageX + 20 );
+		
+	}).mouseout(function() {
+	
+		$(this).attr('title',$('.tooltip-content').html());
+		$('#tooltip').css("display","none");
+		
+	});
+
+});
+
+</script>
+</head>
+
+<body style="background-color: #e4e4e4; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 13px;">
+
+<!-- ToolTip [Start] -->
+Dignissim mus urna nascetur risus <a rel="tooltip" title="It supports">eros et</a> , phasellus, augue?
+<!-- ToolTip [End] -->
+
+</body>
+
+</html>

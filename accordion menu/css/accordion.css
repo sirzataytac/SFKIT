@@ -1,0 +1,44 @@
+﻿html, body { border:0; margin:0; padding:0; width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; margin:0; padding:0; }
+p, ul, ol,form, fieldset, input { margin:0; padding:0; }
+ul, ol { list-style:none; }
+fieldset, img { border:0; }
+button { cursor: pointer; }
+input {outline:none;}
+a{text-decoration:none; outline:none;}
+.hide { display: none; }
+#jsfalse { height:50px; background-color:#952520; text-align:center; line-height:50px; color:#ffffff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  }
+
+/***Accordion Menu [Start]***/
+#accordion-menu {
+	background-color: #b2b2b2;
+	font-size: 12px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px;
+}
+#accordion-menu li {
+border-bottom:1px #dcdcdc solid;
+}
+#accordion-menu .open {
+	cursor: pointer;
+	display: block;
+	padding: 5px 0px 5px 0px;
+	background-color: #b1b1b1;
+	margin: 0px 0px 1px 0px;
+	padding: 5px 5px 5px 15px;
+	background:transparent url('../images/accordionmenu/up.png') no-repeat 0px 6px;
+}
+#accordion-menu .open-selected {
+	background-color: #898989;
+	background:transparent url('../images/accordionmenu/down.png') no-repeat 0px 7px;
+}
+#accordion-menu .content {
+padding:0px 10px 10px 15px;
+	color: #ffffff;
+}
+#accordion-menu a {
+	color: #ffffff;
+}
+/***Accordion Menu [End]***/
